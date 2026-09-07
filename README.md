@@ -18,6 +18,12 @@ X11 and Wayland with no window embedding. Tabs, mouse forwarding, scrollback
 search, truecolor — enough to run `nvim`, `htop` or `lazygit` without leaving
 the editor.
 
+**[godot-web-build-budget](https://github.com/zednaked/godot-web-build-budget)** —
+How a production web build went from 119 MB to 37 MB. What was actually in the
+`.pck`, why lossless import inflates art that was already compressed, and the
+measurement that contradicted the obvious fix: VRAM compression made the build
+54% larger where lossy cut it 74%.
+
 **[godot-canvas-shaders](https://github.com/zednaked/godot-canvas-shaders)** —
 Nine `canvas_item` shaders lifted out of shipped games and documented for reuse.
 GL Compatibility, so they survive HTML5 export and low-end mobile. No addon, no
