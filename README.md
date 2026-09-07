@@ -11,6 +11,13 @@ follows is the part I can show.
 
 ### Godot
 
+**[ZGT](https://github.com/zednaked/zgt-bin)** — A real terminal inside the
+Godot editor's bottom panel. A C++ GDExtension that runs your shell on a
+pseudoterminal and draws the character grid itself, so it behaves the same on
+X11 and Wayland with no window embedding. Tabs, mouse forwarding, scrollback
+search, truecolor — enough to run `nvim`, `htop` or `lazygit` without leaving
+the editor.
+
 **[godot-canvas-shaders](https://github.com/zednaked/godot-canvas-shaders)** —
 Nine `canvas_item` shaders lifted out of shipped games and documented for reuse.
 GL Compatibility, so they survive HTML5 export and low-end mobile. No addon, no
@@ -37,11 +44,9 @@ native plugin editors embedded, MIDI routing and Lua scripting. 30 test binaries
 under AddressSanitizer and ThreadSanitizer, because real-time audio does not
 forgive a data race. → [nirbija site](https://zednaked.github.io/nirbija-site/)
 
-**[whatsapp-cli](https://github.com/zednaked/whatsapp-cli)** — WhatsApp from the
-terminal. Pipe it, script it, automate it.
-
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
-in the terminal, written in Rust.
+in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
+stress that follows the plant all the way to harvest.
 
 ### Games
 
