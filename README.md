@@ -9,6 +9,12 @@ across 17 projects, 12 locales including Arabic RTL, and web builds held under a
 hard byte budget. That work is under contract and lives in a private org — what
 follows is the part I can show.
 
+**Available for contract and consulting work.** Web builds that outgrew their
+byte budget, localization that has to survive a dozen languages, and
+GDExtension work when the editor won't do what you need.
+
+**zednaked@gmail.com** · [LinkedIn](https://www.linkedin.com/in/thiago-g/)
+
 ### Godot
 
 **[ZGT](https://github.com/zednaked/zgt-bin)** — A real terminal inside the
