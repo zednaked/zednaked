@@ -54,7 +54,7 @@ plugins in the strip, loop, record, session. No timeline. 45k lines of C++20 and
 Qt6 hosting LV2, CLAP and VST3 in the same slot over JACK or PipeWire, with
 native plugin editors embedded, MIDI routing and Lua scripting. 30 test binaries
 under AddressSanitizer and ThreadSanitizer, because real-time audio does not
-forgive a data race. → [nirbija site](https://zednaked.github.io/nirbija-site/)
+forgive a data race. → [source](https://github.com/zednaked/Nirbija) · [nirbija site](https://zednaked.github.io/nirbija-site/)
 
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
 in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
