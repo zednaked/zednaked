@@ -59,7 +59,7 @@ port and never delivers the events. 30 test binaries under AddressSanitizer and
 ThreadSanitizer, because real-time audio does not forgive a data race.
 → [source](https://github.com/zednaked/Nirbija) · [site](https://zednaked.github.io/nirbija-site/)
 
-![Nirbija](https://raw.githubusercontent.com/zednaked/Nirbija/main/docs/nirbija.png)
+![Nirbija](https://raw.githubusercontent.com/zednaked/Nirbija/master/docs/nirbija.png)
 
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
 in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
