@@ -17,7 +17,7 @@ GDExtension work when the editor won't do what you need.
 
 ### Godot
 
-**[ZGT](https://github.com/zednaked/zgt-bin)** — A real terminal inside the
+**[ZGT](https://github.com/zednaked/zgt)** — A real terminal inside the
 Godot editor's bottom panel. A C++ GDExtension that runs your shell on a
 pseudoterminal and draws the character grid itself, so it behaves the same on
 X11 and Wayland with no window embedding. Tabs, mouse forwarding, scrollback
@@ -49,12 +49,17 @@ into a scene.
 
 ### Systems
 
-**Nirbija** — a plugin host and mixer for Linux, in the spirit of AUM: channels,
-plugins in the strip, loop, record, session. No timeline. 45k lines of C++20 and
-Qt6 hosting LV2, CLAP and VST3 in the same slot over JACK or PipeWire, with
-native plugin editors embedded, MIDI routing and Lua scripting. 30 test binaries
-under AddressSanitizer and ThreadSanitizer, because real-time audio does not
-forgive a data race. → [source](https://github.com/zednaked/Nirbija) · [nirbija site](https://zednaked.github.io/nirbija-site/)
+**Nirbija** — a Linux mixer that is also an instrument, in the spirit of AUM.
+45k lines of C++20 and Qt6. It hosts LV2, CLAP and VST3 in the same slot over
+JACK or PipeWire with the plugins' own editors embedded — and it ships with a
+drone synth on just intonation, a sixteen-pad sampler, a looper, a step
+sequencer, an arpeggiator and a Lua MIDI plugin, so a session does not start
+empty. Bluetooth LE MIDI is handled directly, because PipeWire advertises the
+port and never delivers the events. 30 test binaries under AddressSanitizer and
+ThreadSanitizer, because real-time audio does not forgive a data race.
+→ [source](https://github.com/zednaked/Nirbija) · [site](https://zednaked.github.io/nirbija-site/)
+
+![Nirbija](https://raw.githubusercontent.com/zednaked/Nirbija/main/docs/nirbija.png)
 
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
 in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
