@@ -63,7 +63,21 @@ ThreadSanitizer, because real-time audio does not forgive a data race.
 
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
 in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
-stress that follows the plant all the way to harvest.
+stress that follows the plant all the way to harvest. The grow was ported to pure
+QML as **[Ganja](https://github.com/zednaked/omarchy-ganja)**, a plant that lives
+in the Omarchy bar.
+
+**[Omahold](https://github.com/zednaked/omahold)** — A miniature dwarf fortress
+that lives in the Omarchy shell. 48×30 cells across 8 z-levels, seven dwarves with
+hunger, mood and trades, digging and brewing and strange moods, caravans, goblin
+ambushes, floods and magma. 250k of deterministic simulation in plain JavaScript
+behind a QML surface — no binary, no network, one tick costing a fraction of a
+millisecond on a 2014 MacBook, and the world keeps ticking while the panel is
+closed. English and Portuguese.
+
+Both passed review in the Omarchy plugin marketplace and install with
+`omarchy plugin add` — [zed.omahold](https://omarchy.org/plugins/zed.omahold) ·
+[zed.ganja](https://omarchy.org/plugins/zed.ganja).
 
 ### Games
 
