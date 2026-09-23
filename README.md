@@ -28,7 +28,20 @@ the editor.
 How a production web build went from 119 MB to 37 MB. What was actually in the
 `.pck`, why lossless import inflates art that was already compressed, and the
 measurement that contradicted the obvious fix: VRAM compression made the build
-54% larger where lossy cut it 74%.
+54% larger where lossy cut it 74%. The editor shows none of those numbers, so
+the measurement became
+[godot-proposals#15505](https://github.com/godotengine/godot-proposals/issues/15505),
+triaged by the Godot team under `topic:editor` and `topic:import`.
+
+**[godot-i18n-that-holds-up](https://github.com/zednaked/godot-i18n-that-holds-up)** —
+Shipping a Godot 4 game in 12 locales. 3,673 source and translation pairs
+measured: the usual advice to reserve 30% runs backwards, because paragraphs sit
+at a p95 of 1.30x while buttons hit 2.00x with a worst case of 3.67x, and the
+whole tail is in the short strings that make up the UI. Counting with `.length`
+inflates Hindi by 60% and Nepali by 76% and reports exactly 0% growth for Arabic
+and German, so the check you would write to catch the bug passes clean. Two
+zero-dependency tools: one measures expansion from the reader's CSV, one gates
+a build in CI.
 
 **[godot-canvas-shaders](https://github.com/zednaked/godot-canvas-shaders)** —
 Nine `canvas_item` shaders lifted out of shipped games and documented for reuse.
@@ -81,9 +94,17 @@ Both passed review in the Omarchy plugin marketplace and install with
 
 ### Games
 
-Seven titles on [itch.io/zedcave](https://zedcave.itch.io), three playable in
-the browser — a cyberpunk text MMO with an authoritative Cloudflare Workers
-backend, a tactical FPS, an RTS, a match-3.
+On [itch.io/zedcave](https://zedcave.itch.io), and the two worth your time are
+playable in the browser:
+
+**Ciberteia** — a cyberpunk text MMO in Godot exported to the web, with an
+authoritative backend on Cloudflare Workers. Server owns the world state, the
+client reconciles; the interesting part is what happens to a session when the
+connection does not cooperate.
+
+**Rinha** — a real-time strategy game in the StarCraft lineage, also in the
+browser. Selection, orders and unit counts are where an RTS spends its frame
+budget, and where a 2D engine starts telling you what it actually costs.
 
 ---
 
