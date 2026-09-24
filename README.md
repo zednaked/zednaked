@@ -25,12 +25,13 @@ search, truecolor — enough to run `nvim`, `htop` or `lazygit` without leaving
 the editor.
 
 **[godot-web-build-budget](https://github.com/zednaked/godot-web-build-budget)** —
-Two production web builds, the same default, the same size of mistake: 119 MB
-down to 37 MB on the first, a 61 MB `.pck` down to 16 MB on the second, 74% less
-both times. What was actually in the `.pck`, why lossless import inflates art
+Three production web builds, the same default every time: 119 MB down to 37 MB
+on the first, a 61 MB `.pck` down to 16 MB on the second, and 48% less on the wire
+on the third, where the largest file in the pack was a 7.1 MB JSON that nothing
+reads at runtime. What was actually in the `.pck`, why lossless import inflates art
 that was already compressed, and the measurement that contradicted the obvious
 fix: VRAM compression made the build 54% larger where lossy cut it 74%. The
-second edition adds what the export ships that nobody chose (`all_resources`
+later editions add what the export ships that nobody chose (`all_resources`
 sweeps in work files and test scenes, a filter problem rather than a cleanup
 one) and where the floor is: the engine alone is 8.9 MB over brotli, confirmed
 by an unrelated Godot game at 9.6 MB. Below that you are optimising the engine,
