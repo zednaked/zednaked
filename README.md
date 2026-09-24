@@ -92,6 +92,16 @@ Both passed review in the Omarchy plugin marketplace and install with
 `omarchy plugin add` — [zed.omahold](https://omarchy.org/plugins/zed.omahold) ·
 [zed.ganja](https://omarchy.org/plugins/zed.ganja).
 
+**[omarchy-zero](https://github.com/zednaked/omarchy-zero)** — The Omarchy shell
+on a plain Arch install, without the official installer. Measured layer by layer
+on a 2018 laptop: the shell costs 149 packages over base, and the file manager
+alone costs 174. The installer runs as a dry run first, marks the 124 pending
+migrations done the way Omarchy's own finalizer does, and puts a guard in front of
+the 16 commands that would rewrite the machine. It builds on
+**[omarchy-guest](https://github.com/zednaked/omarchy-guest)**, which runs the same
+shell on top of an existing Hyprland setup and checks every upstream ref against
+a written contract before it lands.
+
 ### Games
 
 On [itch.io/zedcave](https://zedcave.itch.io), and the two worth your time are
