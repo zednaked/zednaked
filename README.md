@@ -124,9 +124,12 @@ budget, and where a 2D engine starts telling you what it actually costs.
 
 ---
 
-**Hire me for it:** a fixed-scope audit of your Godot web build, from **USD 1,200**,
-3 business days, no access to your source needed.
-[What you get](https://github.com/zednaked/godot-web-build-budget#if-your-build-has-the-same-problem)
-· zednaked@gmail.com
+### Work with me
+
+Web games in Godot with the art included, from **USD 8,000** · bringing a Godot
+game to the browser, from **USD 4,000** · playable ads, from **USD 2,500** · a web
+build audit, **USD 1,200** in 3 business days with no access to your source.
+Fixed scope, fixed price, agreed up front.
+**[What each one includes →](https://github.com/zednaked/work-with-me)** · zednaked@gmail.com
 
 Curitiba, Brazil · remote, any timezone · Godot · GDScript · C++ · Qt · Rust · Linux
