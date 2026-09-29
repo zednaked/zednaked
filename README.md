@@ -25,8 +25,9 @@ search, truecolor — enough to run `nvim`, `htop` or `lazygit` without leaving
 the editor.
 
 **[godot-web-build-budget](https://github.com/zednaked/godot-web-build-budget)** —
-Three production web builds, the same default every time, and every one 48%
-lighter or more with no assets deleted. The first went from 119 MB to 37 MB; on
+Six production web builds. Five shipped with the same import default, and every
+one of those came down 48% or more with no assets deleted; the sixth, already
+fixed, had 3% to give. The first went from 119 MB to 37 MB; on
 the third, the largest file in the pack was a 7.1 MB JSON that nothing reads at
 runtime. What was actually in the `.pck`, why lossless import inflates art
 that was already compressed, and the measurement that contradicted the obvious
