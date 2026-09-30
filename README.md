@@ -120,8 +120,11 @@ client reconciles; the interesting part is what happens to a session when the
 connection does not cooperate.
 
 **Rinha** — a real-time strategy game in the StarCraft lineage, also in the
-browser. Selection, orders and unit counts are where an RTS spends its frame
-budget, and where a 2D engine starts telling you what it actually costs.
+browser. One performance pass, measured in Firefox on a real GPU: the opening
+went from 1,565 draw calls a frame to 29, and a late game with 700 units from
+36 to 57 fps (p95 30 to 55). Most of it was static scenery drawn one shape per
+call, grass rebuilt from script 30 times a second, and an AI target search that
+compared every unit against every other.
 
 ---
 
