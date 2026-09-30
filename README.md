@@ -99,6 +99,19 @@ Both passed review in the Omarchy plugin marketplace and install with
 `omarchy plugin add` — [zed.omahold](https://omarchy.org/plugins/zed.omahold) ·
 [zed.ganja](https://omarchy.org/plugins/zed.ganja).
 
+**[Shan Shui](https://github.com/zednaked/omarchy-shanshui)** — An endless
+Chinese landscape scroll painted across the Omarchy desktop, stroke by stroke, in
+the theme's colors, built on LingDong-'s
+[{Shan, Shui}\*](https://github.com/LingDong-/shan-shui-inf). The landscape is
+generated outside the shell at the lowest CPU priority, as a painting and a delay
+map per screen-wide strip, and on screen it is one shader comparing two numbers
+per pixel. At 12 fps it costs 2–3% of one core, paused or under a fullscreen
+window it costs nothing, and strips generated independently meet pixel for
+pixel. In marketplace review; installs today with
+`omarchy plugin add https://github.com/zednaked/omarchy-shanshui`.
+
+![Shan Shui painting across the desktop](https://raw.githubusercontent.com/zednaked/omarchy-shanshui/main/demo.gif)
+
 **[omarchy-zero](https://github.com/zednaked/omarchy-zero)** — The Omarchy shell
 on a plain Arch install, without the official installer. Measured layer by layer
 on a 2018 laptop: the shell costs 149 packages over base, and the file manager
