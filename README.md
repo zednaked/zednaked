@@ -107,7 +107,8 @@ migrations done the way Omarchy's own finalizer does, and puts a guard in front 
 the 16 commands that would rewrite the machine. It builds on
 **[omarchy-guest](https://github.com/zednaked/omarchy-guest)**, which runs the same
 shell on top of an existing Hyprland setup and checks every upstream ref against
-a written contract before it lands.
+a written contract before it lands, then lets each update in gate by gate: 114 of
+their migrations skipped across two machines, each with the reason on file.
 
 ### Games
 
