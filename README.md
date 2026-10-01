@@ -41,6 +41,14 @@ not your game. The editor shows none of these numbers, so the measurement became
 [godot-proposals#15505](https://github.com/godotengine/godot-proposals/issues/15505),
 triaged by the Godot team under `topic:editor` and `topic:import`.
 
+**[playable-budget](https://github.com/zednaked/playable-budget)** — A playable
+ad in PixiJS v8, one HTML file at 630 KB: 31% of Meta's 2 MB cap, with every
+byte accounted for. 84% of it is the library and 3.7 KB is the game; Pixi
+bundles three renderers by default, and keeping only WebGL saved 66 KB; inlining
+the art as base64 costs a third on top. An empty Godot 4.7 web export is 39.8 MB,
+19 times the cap, before a single sprite.
+[Play it](https://zednaked.github.io/playable-budget/).
+
 **[godot-i18n-that-holds-up](https://github.com/zednaked/godot-i18n-that-holds-up)** —
 Shipping a Godot 4 game in 12 locales. 3,673 source and translation pairs
 measured: the usual advice to reserve 30% runs backwards, because paragraphs sit
