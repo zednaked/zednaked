@@ -90,6 +90,15 @@ ThreadSanitizer, because real-time audio does not forgive a data race.
 
 ![Nirbija](https://raw.githubusercontent.com/zednaked/Nirbija/master/docs/nirbija.png)
 
+**[Jangada](https://github.com/zednaked/jangada)** — Alternative firmware for the
+M-VAVE FM-1 pocket synth, a fork of [Felucca](https://github.com/hugelton/Felucca)
+in embedded C. A superwave analog engine with sub, drift and four filter types, a
+4-slot modulation matrix, 16 parameters per engine, latched drones, per-step
+ratchet and chance. With many voices the superwave keeps fewer copies to fit the
+chip: 8 voices of super saw take 55% of the CPU. Reproducible builds in CI, an
+instruction-count test on Linux, and every demo in the README rendered by the
+firmware's own DSP.
+
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
 in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
 stress that follows the plant all the way to harvest. The grow was ported to pure
