@@ -92,12 +92,14 @@ ThreadSanitizer, because real-time audio does not forgive a data race.
 
 **[Jangada](https://github.com/zednaked/jangada)** — Alternative firmware for the
 M-VAVE FM-1 pocket synth, a fork of [Felucca](https://github.com/hugelton/Felucca)
-in embedded C. A superwave analog engine with sub, drift and four filter types, a
-4-slot modulation matrix, 16 parameters per engine, latched drones, per-step
-ratchet and chance. With many voices the superwave keeps fewer copies to fit the
-chip: 8 voices of super saw take 55% of the CPU. Reproducible builds in CI, an
-instruction-count test on Linux, and every demo in the README rendered by the
-firmware's own DSP.
+in embedded C. A superwave analog engine with a Moog-style ladder among five filter
+types, a 6-operator FM engine edited live from Dexed over SysEx, a 4-slot modulation
+matrix, latched drones, per-step ratchet and chance. The ratchet went upstream: it
+ships in [Felucca 1.0.5](https://github.com/hugelton/Felucca/releases/tag/v1.0.5),
+credited in the release notes ([PR #100](https://github.com/hugelton/Felucca/pull/100)).
+With many voices the superwave keeps fewer copies to fit the chip: 8 voices of super
+saw take 55% of the CPU. Reproducible builds in CI, and every demo in the README
+rendered by the firmware's own DSP.
 
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
 in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
