@@ -153,6 +153,14 @@ authoritative backend on Cloudflare Workers. Server owns the world state, the
 client reconciles; the interesting part is what happens to a session when the
 connection does not cooperate.
 
+**[Greedy Bastards](https://github.com/zednaked/greedy-bastards-releases)** — a 3D
+arena melee FPS, solo, shipped as v1.0 in April 2026 for Windows and Linux. Godot
+4.6 (Forward+): flick-based sword combat with parry and dash, 4-player co-op over
+ENet with a headless dedicated server, and goblin AI that moves as a group, with
+morale and rage. The name goes back to 2019: a 2D turn-based roguelike in Godot 3,
+then an arena version in plain JavaScript that still
+[plays in the browser](https://zednaked.github.io/greedy-bastards-js/).
+
 **Rinha** — a real-time strategy game in the StarCraft lineage, also in the
 browser. One performance pass, measured in Firefox on a real GPU: the opening
 went from 1,565 draw calls a frame to 29, and a late game with 700 units from
