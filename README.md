@@ -68,14 +68,6 @@ dependencies, MIT.
 Scene operations an agent can actually drive, with the token cost of reading a
 scene tree cut down to something workable.
 
-**[godot-claude-tools](https://github.com/zednaked/godot-claude-tools)** —
-Summarises Godot scenes and scripts before an agent reads them. A `.tscn` that
-costs 40k tokens raw costs a fraction of that summarised.
-
-**[SpineViewer](https://github.com/zednaked/SpineViewer)** — Inspect Spine
-skeletons, skins and animation names outside the runtime, before wiring them
-into a scene.
-
 ### Systems
 
 **Nirbija** — a Linux mixer that is also an instrument, in the spirit of AUM.
@@ -92,14 +84,19 @@ ThreadSanitizer, because real-time audio does not forgive a data race.
 
 **[Jangada](https://github.com/zednaked/jangada)** — Alternative firmware for the
 M-VAVE FM-1 pocket synth, a fork of [Felucca](https://github.com/hugelton/Felucca)
-in embedded C. A superwave analog engine with a Moog-style ladder among five filter
-types, a 6-operator FM engine edited live from Dexed over SysEx, a 4-slot modulation
-matrix, latched drones, per-step ratchet and chance. The ratchet went upstream: it
-ships in [Felucca 1.0.5](https://github.com/hugelton/Felucca/releases/tag/v1.0.5),
-credited in the release notes ([PR #100](https://github.com/hugelton/Felucca/pull/100)).
-With many voices the superwave keeps fewer copies to fit the chip: 8 voices of super
-saw take 55% of the CPU. Reproducible builds in CI, and every demo in the README
-rendered by the firmware's own DSP.
+in embedded C. Thirteen engines on a €70 synth: a superwave analog with a Moog-style
+ladder, a 6-operator FM edited live from Dexed over SysEx, physical models in fixed
+point (a berimbau, a viola caipira, an alfaia), and machine voices from VOSIM, Walsh
+functions, scanned synthesis and Xenakis' GENDY. Every engine has to fit the chip
+that is already there: 8 voices of super saw take 55% of the CPU, so each new mode
+is measured against that budget before it ships, and the expensive one starts as a
+16-mass lite version. One user's six ideas in the issues shipped as a release the
+same afternoon. The ratchet went upstream: it ships in
+[Felucca 1.0.5](https://github.com/hugelton/Felucca/releases/tag/v1.0.5), credited
+in the release notes ([PR #100](https://github.com/hugelton/Felucca/pull/100)).
+Reproducible builds in CI, every demo in the README rendered by the firmware's own
+DSP, and the [Studio](https://zednaked.github.io/jangada/webapp/studio/) runs the
+same code in the browser.
 
 **[Ganja-TUI](https://github.com/zednaked/Ganja-TUI)** — Plant growth simulation
 in the terminal, in Rust. 35 strains with real genetics, seven growth stages, and
