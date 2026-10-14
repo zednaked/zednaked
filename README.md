@@ -59,6 +59,16 @@ and German, so the check you would write to catch the bug passes clean. Two
 zero-dependency tools: one measures expansion from the reader's CSV, one gates
 a build in CI.
 
+**[godot-unreachable](https://github.com/zednaked/godot-unreachable)** — Finds
+the files a Godot 4 game can never load, by reachability from what the engine
+actually loads rather than by counting references: two files that only cite each
+other are dead together. On eight production projects already cleaned by hand
+it found 190 more, 11.1 MiB, and 8 of them were cited by another file. Every one
+it reported on one project was deleted on a scratch copy: cold reimport clean,
+the headless test suites still at zero failures. The first version failed that
+check, on a font fallback that lives in the `.import` file. One Python file, no
+Godot needed, `--fail` for CI.
+
 **[godot-canvas-shaders](https://github.com/zednaked/godot-canvas-shaders)** —
 Nine `canvas_item` shaders lifted out of shipped games and documented for reuse.
 GL Compatibility, so they survive HTML5 export and low-end mobile. No addon, no
