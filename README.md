@@ -3,6 +3,11 @@
 I build games in Godot at production scale, and I write C++ for the parts an
 engine leaves to you.
 
+I'm also a painter: an oil portrait of mine took a gold medal at the Carrousel
+du Louvre in 2015. **[Portfolio and reel](https://zednaked.github.io/portfolio/)**:
+painting, games and creative work for the browser, told in three chapters, with
+a 62-second reel edited in code.
+
 For the past year I've been the sole front-end engineer on a catalogue of 20+
 commercial Godot titles shipped to the browser: one shared runtime replicated
 across 17 projects, 12 locales including Arabic RTL, and web builds held under a
