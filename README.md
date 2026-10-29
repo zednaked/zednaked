@@ -22,6 +22,17 @@ GDExtension work when the editor won't do what you need.
 
 ### Godot
 
+**[Mamulengo](https://github.com/zednaked/mamulengo)** — A 2D skeletal animation
+toolkit for games that people and Claude Code work in at the same time: the
+editor and an MCP server share one command registry, so every bone the agent
+moves shows up live, with undo. Under it, a C++ core written clean-room from a
+spec and black-box measurements: 466 of 466 playback scripts match the reference
+runtime on every frame, 20 characters pose in 0.043 ms natively, and 102 of 102
+production Spine 4.3 projects round-trip unchanged. It plays in Godot (engine
+module or GDExtension) and in the browser, in 220 KB of WebAssembly.
+
+<img src="https://raw.githubusercontent.com/zednaked/mamulengo/main/docs/media/elenco.webp" width="570" alt="A robot, a zombie and a monster, rigged and animated by Claude Code in Mamulengo">
+
 **[ZGT](https://github.com/zednaked/zgt)** — A real terminal inside the
 Godot editor's bottom panel. A C++ GDExtension that runs your shell on a
 pseudoterminal and draws the character grid itself, so it behaves the same on
