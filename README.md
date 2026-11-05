@@ -1,3 +1,13 @@
+<!-- anexos
+
+
+https://github.com/user-attachments/assets/d886e5e9-3412-4754-9a49-ca3cd1a108f4
+
+
+
+https://github.com/user-attachments/assets/def71187-dbff-42b8-8c53-0ab1404ce9ad
+
+-->
 ## Thiago Gonçalves
 
 I build games in Godot at production scale, and I write C++ for the parts an
