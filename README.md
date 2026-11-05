@@ -94,6 +94,28 @@ dependencies, MIT.
 Scene operations an agent can actually drive, with the token cost of reading a
 scene tree cut down to something workable.
 
+### Animation
+
+I direct short films the way I build tools: in code, measured, changed by a
+number rather than by hand.
+
+**Ciberteia teaser** ([watch, 30 s](media/ciberteia-teaser.mp4)) — a teaser for
+my own game without a single image file: every frame is a function of time, in
+about 780 lines of Python. The game's six districts are six neurons, and a death
+is ink that eats the light and stays. When the note was "make the collapse hit
+harder", the fix was a number: the white now lands 8.4 dB above the mass.
+
+<img src="media/ciberteia-4s.webp" width="570" alt="Ciberteia teaser: a pulse of light running along a neuron, with the line 'and wake up again at level one'">
+
+**Show da Turma** ([watch, 37 s](media/o-show-da-turma.mp4)) — a troupe of
+monsters puts on a talent show on a puppet stage, rigged and animated in
+[Mamulengo](https://github.com/zednaked/mamulengo) by Claude Code with me
+directing. A note like "the arms tremble" became a measurement and then a gate:
+the second difference of each joint's angle per frame, and nothing ships while
+it reads above the limit. Characters from Kenney's Monster Builder (CC0).
+
+<img src="media/o-show-da-turma-4s.webp" width="570" alt="Show da Turma: three cartoon monsters on a puppet stage">
+
 ### Systems
 
 **Nirbija** — a Linux mixer that is also an instrument, in the spirit of AUM.
@@ -182,7 +204,8 @@ playable in the browser:
 **Ciberteia** — a cyberpunk text MMO in Godot exported to the web, with an
 authoritative backend on Cloudflare Workers. Server owns the world state, the
 client reconciles; the interesting part is what happens to a session when the
-connection does not cooperate.
+connection does not cooperate. Its [30-second teaser](media/ciberteia-teaser.mp4)
+is under Animation.
 
 **Rinha** — a real-time strategy game in the StarCraft lineage, also in the
 browser. One performance pass, measured in Firefox on a real GPU: the opening
