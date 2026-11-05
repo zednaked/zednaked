@@ -8,6 +8,14 @@ du Louvre in 2015. **[Portfolio and reel](https://zednaked.github.io/portfolio/)
 painting, games and creative work for the browser, told in three chapters, with
 a 62-second reel edited in code.
 
+The two meet in **[Mamulengo](https://github.com/zednaked/mamulengo)**, my
+open-source 2D animation toolkit for games: an illustration goes in as a layered
+PSD, gets rigged and animated, by me or by Claude Code over MCP, and plays in
+Godot and in the browser through a C++ core I wrote. *Show da Turma*, under
+Animation, was made in it.
+
+<img src="https://raw.githubusercontent.com/zednaked/mamulengo/main/docs/media/elenco.webp" width="570" alt="A robot, a zombie and a monster, rigged and animated by Claude Code in Mamulengo">
+
 For the past year I've been the sole front-end engineer on a catalogue of 20+
 commercial Godot titles shipped to the browser: one shared runtime replicated
 across 17 projects, 12 locales including Arabic RTL, and web builds held under a
@@ -30,8 +38,6 @@ spec and black-box measurements: 466 of 466 playback scripts match the reference
 runtime on every frame, 20 characters pose in 0.043 ms natively, and 102 of 102
 production Spine 4.3 projects round-trip unchanged. It plays in Godot (engine
 module or GDExtension) and in the browser, in 220 KB of WebAssembly.
-
-<img src="https://raw.githubusercontent.com/zednaked/mamulengo/main/docs/media/elenco.webp" width="570" alt="A robot, a zombie and a monster, rigged and animated by Claude Code in Mamulengo">
 
 **[ZGT](https://github.com/zednaked/zgt)** — A real terminal inside the
 Godot editor's bottom panel. A C++ GDExtension that runs your shell on a
