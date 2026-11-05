@@ -1,13 +1,3 @@
-<!-- anexos
-
-
-https://github.com/user-attachments/assets/d886e5e9-3412-4754-9a49-ca3cd1a108f4
-
-
-
-https://github.com/user-attachments/assets/def71187-dbff-42b8-8c53-0ab1404ce9ad
-
--->
 ## Thiago Gonçalves
 
 I build games in Godot at production scale, and I write C++ for the parts an
@@ -109,7 +99,7 @@ scene tree cut down to something workable.
 I direct short films the way I build tools: in code, measured, changed by a
 number rather than by hand.
 
-**Ciberteia teaser** ([watch, 30 s](media/ciberteia-teaser.mp4)) — a teaser for
+**Ciberteia teaser** ([watch, 30 s](https://github.com/user-attachments/assets/def71187-dbff-42b8-8c53-0ab1404ce9ad)) — a teaser for
 my own game without a single image file: every frame is a function of time, in
 about 780 lines of Python. The game's six districts are six neurons, and a death
 is ink that eats the light and stays. When the note was "make the collapse hit
@@ -117,7 +107,7 @@ harder", the fix was a number: the white now lands 8.4 dB above the mass.
 
 <img src="media/ciberteia-4s.webp" width="570" alt="Ciberteia teaser: a pulse of light running along a neuron, with the line 'and wake up again at level one'">
 
-**Show da Turma** ([watch, 37 s](media/o-show-da-turma.mp4)) — a troupe of
+**Show da Turma** ([watch, 37 s](https://github.com/user-attachments/assets/d886e5e9-3412-4754-9a49-ca3cd1a108f4)) — a troupe of
 monsters puts on a talent show on a puppet stage, rigged and animated in
 [Mamulengo](https://github.com/zednaked/mamulengo) by Claude Code with me
 directing. A note like "the arms tremble" became a measurement and then a gate:
@@ -214,7 +204,7 @@ playable in the browser:
 **Ciberteia** — a cyberpunk text MMO in Godot exported to the web, with an
 authoritative backend on Cloudflare Workers. Server owns the world state, the
 client reconciles; the interesting part is what happens to a session when the
-connection does not cooperate. Its [30-second teaser](media/ciberteia-teaser.mp4)
+connection does not cooperate. Its [30-second teaser](https://github.com/user-attachments/assets/def71187-dbff-42b8-8c53-0ab1404ce9ad)
 is under Animation.
 
 **Rinha** — a real-time strategy game in the StarCraft lineage, also in the
