@@ -107,6 +107,8 @@ harder", the fix was a number: the white now lands 8.4 dB above the mass.
 
 <img src="media/ciberteia-4s.webp" width="570" alt="Ciberteia teaser: a pulse of light running along a neuron, with the line 'and wake up again at level one'">
 
+https://github.com/user-attachments/assets/def71187-dbff-42b8-8c53-0ab1404ce9ad
+
 **Show da Turma** ([watch, 37 s](https://github.com/user-attachments/assets/d886e5e9-3412-4754-9a49-ca3cd1a108f4)) — a troupe of
 monsters puts on a talent show on a puppet stage, rigged and animated in
 [Mamulengo](https://github.com/zednaked/mamulengo) by Claude Code with me
