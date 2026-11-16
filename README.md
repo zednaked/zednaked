@@ -1,10 +1,13 @@
 ## Thiago Gonçalves
 
-I build games in Godot at production scale, and I write C++ for the parts an
-engine leaves to you.
+I write the engine, not just the game. Two commercial web games now run in
+production on [Mamulengo](https://github.com/zednaked/mamulengo), my C++ and
+WebAssembly engine (client work under NDA): a whole game is 7 MB before any
+compression, against 66 MB on the engine it replaced. Before that, and still,
+I build games in Godot at production scale.
 
 I'm also a painter: an oil portrait of mine took a gold medal at the Carrousel
-du Louvre in 2015. **[Portfolio and reel](https://zednaked.github.io/portfolio/)**:
+du Louvre in 2015. **[Portfolio and reel](https://zed.art.br/)**:
 painting, games and creative work for the browser, told in three chapters, with
 a 62-second reel edited in code.
 
@@ -37,7 +40,11 @@ moves shows up live, with undo. Under it, a C++ core written clean-room from a
 spec and black-box measurements: 466 of 466 playback scripts match the reference
 runtime on every frame, 20 characters pose in 0.043 ms natively, and 102 of 102
 production Spine 4.3 projects round-trip unchanged. It plays in Godot (engine
-module or GDExtension) and in the browser, in 220 KB of WebAssembly.
+module or GDExtension) and in the browser, in 175 KB of WebAssembly gzipped.
+Two commercial web games run on it in production (client work under NDA): game
+logic in TypeScript on the C++ core, the engine pinned as an npm package. A whole
+game is 7 MB before any compression, against 66 MB on the engine it replaced.
+→ [mamulengo.zed.art.br](https://mamulengo.zed.art.br/)
 
 **[ZGT](https://github.com/zednaked/zgt)** — A real terminal inside the
 Godot editor's bottom panel. A C++ GDExtension that runs your shell on a
@@ -217,12 +224,13 @@ client reconciles; the interesting part is what happens to a session when the
 connection does not cooperate. Its 30-second teaser
 is under Animation.
 
-**Rinha** — a real-time strategy game in the StarCraft lineage, also in the
-browser. One performance pass, measured in Firefox on a real GPU: the opening
-went from 1,565 draw calls a frame to 29, and a late game with 700 units from
-36 to 57 fps (p95 30 to 55). Most of it was static scenery drawn one shape per
-call, grass rebuilt from script 30 times a second, and an AI target search that
-compared every unit against every other.
+**[Rinha](https://arcade.zed.art.br/rinha/)** — a real-time strategy game for
+the browser: three factions that build, produce and heal by different rules, AI
+opponents that roll their own personality each match, and online rooms. First
+made in Godot 4, then rewritten as a deterministic C++ simulation compiled to
+WebAssembly, with a WebGL2 renderer and its screens drawn by Mamulengo. It holds
+10,000 units at 60 fps in the browser; the Godot version held 1,000 per side at
+11 fps. Units are polygons animated by name in code, with no sprites.
 
 ---
 
